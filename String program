@@ -59,3 +59,16 @@ public class Main {
     }
 }
 *******************************************************************************
+// Get char at index
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        String str="java Exercise!";
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the index: ");
+        int ind=sc.nextInt();
+        System.out.print("The character at position "+ind+"is: "+str.charAt(ind));
+        
+    }
+}
+*******************************************************************************
