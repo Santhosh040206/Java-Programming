@@ -83,3 +83,13 @@ class Main{
     }
 }
 *******************************************************************************
+// Contains Specified Sequence
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        String str="PHP Exercises and Python Exercises";
+        String str1="an";
+        System.out.println(str.contains(str1));
+    }
+}
+*******************************************************************************
