@@ -10,7 +10,6 @@ class Child extends Parent{
         System.out.println("BMW");
     }
 }
-
 class kid extends Child{
     void chocolate(){
         System.out.println("Dairy Milk");
@@ -24,7 +23,8 @@ class Main{
         a.chocolate();
     }
 }
-******************************************************************************
+
+**************************************************************************************
 import java.util.*;
 
 class Bike{
@@ -87,7 +87,7 @@ class Main{
         obj.rat();
     }
 }
-******************************************************************************
+**************************************************************************************
 //over ride method
 class Parent {
     void hos(){
@@ -110,3 +110,46 @@ class Main{
         a.hos();
     }
 }
+
+**************************************************************************************
+// multilevel using scanner function
+import java.util.*;
+class Palani {
+    String area;
+    void hos(){
+        System.out.println("Enter the area"+area);
+    }
+}
+class Sanjeev extends Palani{
+    String area1;
+    void hos(){
+        System.out.println("Enter the area"+area1);
+    }
+}
+
+class swea extends Sanjeev{
+    String area2;
+    void hos(){
+        System.out.println("Enter the area : "+area2);
+    }
+}
+class Main{
+    public static void main (String[] args) {
+     Scanner sc=new Scanner(System.in);
+     System.out.print("Enter the area 1 : ");
+     String area=sc.nextLine();
+     System.out.print("Enter the area 2 : ");
+     String area1=sc.nextLine();
+     System.out.print("Enter the area 3 : ");
+     String area2=sc.nextLine();
+     swea s=new swea();
+     s.area=area;
+     s.area1=area1;
+     s.area2=area2;
+     s.hos();
+    }
+}
+
+**************************************************************************************
+     
+     
