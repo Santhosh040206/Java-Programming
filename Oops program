@@ -87,3 +87,26 @@ class Main{
         obj.rat();
     }
 }
+******************************************************************************
+//over ride method
+class Parent {
+    void hos(){
+        System.out.println("100 acers");
+    }
+}
+class Child extends Parent{
+    void hos(){
+        System.out.println("BMW");
+    }
+}
+class kid extends Child{
+    void hos(){
+        System.out.println("PS 5");
+    }
+}
+class Main{
+    public static void main (String[] args) {
+        kid a = new kid();
+        a.hos();
+    }
+}
