@@ -1,0 +1,26 @@
+// Basic program
+class Parent {
+    void land(){
+        System.out.println("100 acers");
+    }
+}
+
+class Child extends Parent{
+    void car(){
+        System.out.println("BMW");
+    }
+}
+
+class kid extends Child{
+    void chocolate(){
+        System.out.println("Dairy Milk");
+    }
+}
+class Main{
+    public static void main (String[] args) {
+        kid a = new kid();
+        a.land();
+        a.car();
+        a.chocolate();
+    }
+}
