@@ -94,7 +94,7 @@ lass SLL {
         }
         temp.next = null;
     }
- // Delete at middle (by position)
+// Delete at middle (by position)
     public void deleteAtMiddle(int position) {
         if (head == null) {
             System.out.println("List is empty.");
@@ -113,4 +113,15 @@ lass SLL {
             return;
         }
         temp.next = temp.next.next;
+    }
+  // Search
+    public boolean search(int data) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == data) {
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
     }
