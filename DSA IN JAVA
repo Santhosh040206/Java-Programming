@@ -139,3 +139,34 @@ lass SLL {
         System.out.println();
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        SLL list = new SLL();
+
+        // Insertions
+        list.insertAtEnd(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+        list.display();
+
+        list.insertAtBeginning(5);
+        list.display();
+
+        list.insertAtMiddle(15, 3);
+        list.display();
+
+        // Deletions
+        list.deleteAtBeginning();
+        list.display();
+
+        list.deleteAtEnd();
+        list.display();
+
+        list.deleteAtMiddle(2);
+        list.display();
+
+        // Searching
+        System.out.println("Searching 20: " + list.search(20));
+        System.out.println("Searching 100: " + list.search(100));
+    }
+}
