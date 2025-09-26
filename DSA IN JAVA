@@ -33,7 +33,13 @@ lass SLL {
             next = null;
         }
     }
- // Insert at end
+  // Insert at beginning
+    public void insertAtBeginning(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
+// Insert at end
     public void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if (head == null) {
