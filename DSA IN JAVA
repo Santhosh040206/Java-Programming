@@ -70,3 +70,11 @@ lass SLL {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+    // Delete at beginning
+    public void deleteAtBeginning() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        head = head.next;
+    }
