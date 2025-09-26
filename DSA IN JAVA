@@ -78,7 +78,7 @@ lass SLL {
         }
         head = head.next;
     }
-    // Delete at end
+  // Delete at end
     public void deleteAtEnd() {
         if (head == null) {
             System.out.println("List is empty.");
@@ -93,4 +93,24 @@ lass SLL {
             temp = temp.next;
         }
         temp.next = null;
+    }
+ // Delete at middle (by position)
+    public void deleteAtMiddle(int position) {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        if (position == 1) {
+            deleteAtBeginning();
+            return;
+        }
+        Node temp = head;
+        for (int i = 1; i < position - 1 && temp.next != null; i++) {
+            temp = temp.next;
+        }
+        if (temp.next == null) {
+            System.out.println("Position out of range.");
+            return;
+        }
+        temp.next = temp.next.next;
     }
