@@ -186,3 +186,13 @@ class DLL {
             next = null;
         }
     }
+    // Insert at beginning
+    public void insertAtBeginning(int data) {
+        Node newNode = new Node(data);
+        if (head != null) {
+            newNode.next = head;
+            head.prev = newNode;
+        }
+        head = newNode;
+    }
+
