@@ -209,5 +209,25 @@ class DLL {
         temp.next = newNode;
         newNode.prev = temp;
     }
+    // Insert at middle 
+    public void insertAtMiddle(int data, int position) {
+        if (position == 1) {
+            insertAtBeginning(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
+        for (int i = 1; i < position - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+        if (temp == null || temp.next == null) {
+            insertAtEnd(data); 
+            return;
+        }
+        newNode.next = temp.next;
+        newNode.prev = temp;
+        temp.next.prev = newNode;
+        temp.next = newNode;
+    }
 
 
