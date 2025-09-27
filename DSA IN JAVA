@@ -258,3 +258,31 @@ class DLL {
     }
 
 
+    // Delete at middle (by position)
+    public void deleteAtMiddle(int position) {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        if (position == 1) {
+            deleteAtBeginning();
+            return;
+        }
+        Node temp = head;
+        for (int i = 1; i < position && temp != null; i++) {
+            temp = temp.next;
+        }
+        if (temp == null) {
+            System.out.println("Position out of range.");
+            return;
+        }
+        if (temp.next != null) {
+            temp.next.prev = temp.prev;
+        }
+        if (temp.prev != null) {
+            temp.prev.next = temp.next;
+        }
+    }
+
+
+
