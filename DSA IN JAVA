@@ -240,5 +240,21 @@ class DLL {
             head.prev = null;
         }
     }
+// Delete at end
+    public void deleteAtEnd() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.prev.next = null;
+    }
 
 
