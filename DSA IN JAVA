@@ -397,3 +397,17 @@ class CLL {
         }
         temp.next = head;
     }
+  // Delete node start
+    public void deleteAtBeginning() {
+        if (head == null) return;
+        if (head.next == head) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != head) {
+            temp = temp.next;
+        }
+        temp.next = head.next;
+        head = head.next;
+    }
