@@ -411,3 +411,19 @@ class CLL {
         temp.next = head.next;
         head = head.next;
     }
+    // Delete middle
+    public void deleteAtMiddle(int pos) {
+        if (head == null || pos <= 1) {
+            deleteAtBeginning();
+            return;
+        }
+        Node temp = head;
+        for (int i = 1; i < pos - 1 && temp.next != head; i++) {
+            temp = temp.next;
+        }
+        if (temp.next == head) {
+            deleteAtEnd();
+        } else {
+            temp.next = temp.next.next;
+        }
+    }
