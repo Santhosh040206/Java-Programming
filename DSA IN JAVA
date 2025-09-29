@@ -384,3 +384,16 @@ class CLL {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+ // Delete node end
+    public void deleteAtEnd() {
+        if (head == null) return;
+        if (head.next == head) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next.next != head) {
+            temp = temp.next;
+        }
+        temp.next = head;
+    }
