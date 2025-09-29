@@ -370,3 +370,17 @@ class CLL {
             head = newNode;
         }
     }
+   // Insert node at middle
+    public void insertAtMiddle(int data, int pos) {
+        if (head == null || pos <= 1) {
+            insertAtBeginning(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
+        for (int i = 1; i < pos - 1 && temp.next != head; i++) {
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
