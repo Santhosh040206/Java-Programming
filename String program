@@ -24,7 +24,7 @@ class Main {
 import java.util.*;
 class Main {
 	public static void main(String[]args) {
-		String a = "ashwanth";
+		String a = "Sandy";
 		int vowles=0;
 		int consnants=0;
 		for(char c: a.toCharArray()) {
