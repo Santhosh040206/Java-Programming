@@ -732,3 +732,16 @@ class Main {
 	}
 }
 ************************************************************************************
+// stack using array
+class SimpleStack {
+    int top = -1;
+    int[] stack = new int[5];
+   
+    void push(int val){
+        if(top==4){
+            System.out.println("stack full");
+        } else {
+            top++;
+            stack[top] = val;
+        }
+    }
