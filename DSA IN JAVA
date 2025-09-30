@@ -701,3 +701,20 @@ void peek() {
 			System.out.println(top.data);
 		}
 	}
+	void sandy() {
+		if(top == null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			Node temp = top;
+			while (temp != null) {
+				System.out.print(temp.data + " ");
+				temp = temp.next;
+			}
+			System.out.println(); 
+		}
+	}
+	boolean isEmpty(){
+        return top == null;
+	}
+}
