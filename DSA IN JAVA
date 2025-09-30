@@ -753,4 +753,12 @@ class SimpleStack {
             top--;
         }
     }
+   void peek(){
+        if(top == -1){
+            System.out.println("stack empty");
+        } else {
+            System.out.println("peeked:" +stack[top]);
+        }
+    }
    
+
