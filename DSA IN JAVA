@@ -745,3 +745,12 @@ class SimpleStack {
             stack[top] = val;
         }
     }
+ void pop(){
+        if(top == -1){
+            System.out.println("stack empty");
+        } else {
+            System.out.println("popped:" +stack[top]);
+            top--;
+        }
+    }
+   
