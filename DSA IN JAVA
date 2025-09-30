@@ -693,3 +693,11 @@ void pop() {
 			top = top.next;
 		}
 	}
+void peek() {
+		if(top==null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			System.out.println(top.data);
+		}
+	}
