@@ -671,3 +671,16 @@ class Node {
 		this.next = null;
 	}
 }
+class LinkedListStack {
+	Node top = null;
+
+	void push(int val) {
+		Node newNode = new Node(val);
+		if(top == null) {
+			top = newNode;
+		}
+		else {
+			newNode.next = top;
+			top = newNode;
+		}
+	}
