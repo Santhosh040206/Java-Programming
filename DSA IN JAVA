@@ -718,3 +718,17 @@ void peek() {
         return top == null;
 	}
 }
+class Main {
+	public static void main (String[] args) {
+		LinkedListStack stack = new LinkedListStack();
+
+		stack.push(10);
+		stack.push(20);
+		stack.push(30);
+		stack.sandy();
+		stack.peek();
+		stack.pop();
+		stack.sandy();
+	}
+}
+************************************************************************************
