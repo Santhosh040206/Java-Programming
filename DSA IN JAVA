@@ -684,3 +684,12 @@ class LinkedListStack {
 			top = newNode;
 		}
 	}
+void pop() {
+		if(top==null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			System.out.println(top.data);
+			top = top.next;
+		}
+	}
