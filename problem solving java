@@ -1,0 +1,19 @@
+Conversion of Dollar to Cent
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        int a=102;
+        int b=55;
+        int c=48;
+        int d=450;
+        int Dollar=(a+c);
+        int Cent=(b+d);
+        if (Cent >=100){
+            Dollar+=Cent/100;
+            Cent=Cent%100;
+            System.out.println("Dollar "+Dollar);
+            System.out.println(Cent);
+        }
+    }
+ }
+***************************************************************************************************************
