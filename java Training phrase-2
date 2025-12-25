@@ -1,4 +1,4 @@
-Conversion of Dollar to Cent
+//Conversion of Dollar to Cent
 import java.util.*;
 public class Main {
     public static void main(String args[]) {
@@ -17,7 +17,7 @@ public class Main {
     }
  }
 ***************************************************************************************************************
-Sharing percentages
+//Sharing percentages
 import java.util.*;
 public class Main
 {
@@ -35,6 +35,24 @@ public class Main
 	    System.out.println("C Share"+Share);
 	    System.out.println("D Share"+Share);
 	    System.out.println("E Share"+Share);
+	}
+}
+***************************************************************************************************************
+//finding the number sequence
+public class Main
+{
+	public static void main(String[] args) {
+		int n= new java.util.Scanner(System.in).nextInt();
+		for(int i=1;i<=n;i++){
+		    if(i%2==0){
+		        int res=(i*i)-2;
+		        System.out.print(res+" ");
+		    }
+		    else{
+		        int res=(i*i)-1;
+		        System.out.print(res+" ");
+		    }
+		}
 	}
 }
 ***************************************************************************************************************
