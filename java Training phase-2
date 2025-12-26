@@ -160,7 +160,7 @@ public class Main
 		System.out.println(f);
 	}
 }
-*****************************************************************************************
+**************************************************************************************************************************************************
 
 public class Main
 {
@@ -176,3 +176,32 @@ public class Main
 	    }
 	}
 }
+**************************************************************************************************************************************************
+//Leap year & Calendar
+import java.util.Scanner;
+class Main {
+	public static void main(String args[]) {
+		int year= new java.util.Scanner(System.in).nextInt();
+		int month= new java.util.Scanner(System.in).nextInt();
+		int leap = 0;
+		if(year>1990 && year<=9999) {
+			if(year%400==0|| year%4==0&&year%100!=0) {
+				leap=year;
+			}
+			if(month==2&&leap==year) {
+				System.out.println("29");
+			}
+			else if(month==1||month==3||month==5||month==7||month==8||month==10||month==12) {
+				System.out.println("31");
+			}
+			else if(month==2) {
+				System.out.println("28");
+			}
+			else {
+				System.out.println("30");
+			}
+		}
+
+	}
+}
+**************************************************************************************************************************************************
