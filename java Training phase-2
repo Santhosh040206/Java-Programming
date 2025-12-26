@@ -161,3 +161,18 @@ public class Main
 	}
 }
 *****************************************************************************************
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int i=new java.util.Scanner(System.in).nextInt();
+	    if(i<100){
+	        int j=(i%10)+(i/10);
+	        int k=(i%10)+(i/10);
+	        System.out.println(j+" "+k);
+	        if(i==(j+k)){
+	            System.out.println("Same");
+	        }
+	    }
+	}
+}
