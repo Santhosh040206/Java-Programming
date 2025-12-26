@@ -141,3 +141,23 @@ public class Main
 }
 ************************************************************************************************************************************************
 // to find the fibonacci series index value
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=new java.util.Scanner(System.in).nextInt();
+	    int d=0,e=1,f=0;
+		if (n==1){
+		    System.out.println("0");
+		} 
+		if(n==2){
+		    System.out.println("1");
+		}
+		for(int i=3;i<=n;i++){
+		    f=d+e;
+		    d=e;
+		    e=f;
+		}
+		System.out.println(f);
+	}
+}
+*****************************************************************************************
