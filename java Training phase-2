@@ -233,3 +233,22 @@ public class Main
             System.out.println("Not a Fact Num");
     }
 }
+*************************************************************************************************************************************************
+//sum of the factorials of its digits
+//Type-2
+class Main {
+    public static void main(String[] args) {
+        
+        int n =new java.util.Scanner(System.in).nextInt(), temp = n, sum = 0;
+
+        while (temp > 0) {
+            int d = temp % 10, f = 1;
+            for (int i = 1; i <= d; i++) f *= i;
+            sum += f;
+            temp /= 10;
+        }
+
+        System.out.println(sum == n ? "Factnum" : "Not a Factnum");
+    }
+}
+***************************************************************************************************************************************************
