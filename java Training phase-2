@@ -579,3 +579,31 @@ public class Main {
     }
 }
 ************************************************************************************************************************************************
+//world building
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine().trim();
+        String[] words = str.split("\\s+");
+        boolean isValid = true;
+        for (int i = 0; i < words.length - 1; i++) {
+            char lastChar = words[i].charAt(words[i].length() - 1);
+            char firstChar = words[i + 1].charAt(0);
+            if (lastChar != firstChar) {
+                isValid = false;
+                break;
+            }
+        }
+        String lastWord = words[words.length - 1];
+        if (!lastWord.endsWith("#")) {
+            isValid = false;
+        }
+        if (isValid) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid sentence");
+        }
+    }
+}
+**********************************************************************************************************************************************************
