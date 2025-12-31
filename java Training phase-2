@@ -553,3 +553,29 @@ public class Main {
     }
 }
 ************************************************************************************************************************************************
+// Anagram
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String m = sc.nextLine();
+        String n = sc.nextLine();
+
+        char[] str1 = m.toCharArray();
+        char[] str2 = n.toCharArray();
+
+        if (m.length() == n.length()) {
+            Arrays.sort(str1);
+            Arrays.sort(str2);
+
+            if (Arrays.equals(str1, str2)) {
+                System.out.println("Anagram");
+            } else {
+                System.out.println("Not an Anagram");
+            }
+        } else {
+            System.out.println("Not an Anagram");
+        }
+    }
+}
+************************************************************************************************************************************************
