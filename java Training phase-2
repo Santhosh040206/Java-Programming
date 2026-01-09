@@ -798,3 +798,32 @@ class Main
 	}
 }
 *************************************************************************************************
+//TreeSet Example
+import java.util.*;
+class Main
+{
+	public static void main (String[] args) {
+	
+	TreeSet<Integer>set = new TreeSet<>();
+	
+	set.add(40);
+	set.add(50);
+	set.add(60);
+	set.add(100);
+	
+	System.out.println(set);
+	
+	System.out.println(set.contains(50));
+	
+	System.out.println(set.size());
+	
+	System.out.println(set.isEmpty());
+	
+	System.out.println(set.higher(50));
+	
+	System.out.println(set.lower(60));
+	
+	System.out.println(set.lower(20));
+	
+	}
+}
